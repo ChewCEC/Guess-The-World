@@ -108,8 +108,6 @@ addEventListener('DOMContentLoaded', () => {
             
             }
         }
-
-
     }
 
     function resetGame() {
