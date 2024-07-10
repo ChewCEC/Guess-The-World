@@ -1,0 +1,182 @@
+body {
+    background-image: url("./Resources/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.word-scramble{
+    background-color: #030616;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 80%;
+    /* display: grid;    */
+
+}
+
+.game-title {
+    /* background-color: white; */
+    width: auto;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-title-img {
+    height: 35%;
+    width: auto;
+    margin-inline: auto;
+    
+}
+
+.container-word {
+    background-color: #4A5567;
+    border-radius: 10px;
+    height: 90px;
+    width: auto;
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    color: #97A3B6;
+    font-size: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    font-size: 20px;
+}
+
+.tries-container, .mistake-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    color: #97A3B6;
+    font-size: 20px;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 14px;
+
+}
+
+.char-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    background-color: #4A5567;
+
+}
+
+#box-container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 30%;
+
+}
+
+
+.word-box {
+    background-color: transparent;
+    /* Borde redondeado */
+    padding: 7px 16px;
+    /* Espaciado interno */
+    font-size: 15px;
+    /* Tamaño del texto */
+    text-align: center;
+    /* Alineación del texto */
+    display: inline-block;
+    /* Para permitir el padding y los márgenes */
+    transition: background-color 0.3s ease;
+    /* Efecto de transición */
+    margin: 8px;
+    /* Margen */
+    cursor: pointer;
+}
+
+.char-box {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+    border: 2px solid #4A4E58; /* Borde más claro */
+    border-radius: 10px; /* Ajusta el radio del borde según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+
+}
+
+
+.character-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#button-random, #button-reset {
+    background-color: #C951E7; /* Color de fondo morado */
+    color: #F2F5F9; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+
+
