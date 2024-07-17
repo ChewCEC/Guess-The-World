@@ -73,20 +73,24 @@ addEventListener('DOMContentLoaded', () => {
     async function checkCorrectCharacter(character) {
         console.log(character)
         console.log(currentWord)
+        let charBoxes = document.querySelectorAll('.char-box');
+        charBoxes[generalIndex].style.border = '4px solid #672171';
+
         if (character === currentWord[generalIndex]) {
             console.log('Correct character');
             // Selecciona la casilla vacía correspondiente y actualiza su contenido
-            let charBoxes = document.querySelectorAll('.char-box');
             charBoxes[generalIndex].textContent = character;
             generalIndex++;
+            if (generalIndex < currentWord.length) {
+                charBoxes[generalIndex].style.border = '4px solid #672171';
+            }
             if (generalIndex === currentWord.length) {
                 setTimeout( () => {
                     alert('You Win!');
                     newWord(); 
-                }, 1000);
+                }, 700);
             }
         } else {
-
             console.log('Incorrect character');
             tempTriesCounter++;
             triesCounter.textContent = `${tempTriesCounter}/5`;
@@ -104,7 +108,7 @@ addEventListener('DOMContentLoaded', () => {
                 setTimeout( () => {
                     alert('You lose!');
                     newWord(); 
-                }, 1000);
+                }, 700);
             
             }
         }
@@ -129,7 +133,6 @@ addEventListener('DOMContentLoaded', () => {
         wrongChars.textContent = "";
 
         generalIndex = 0;
-
         tempWrongChars = "";
         tempTriesCounter = 0;
 

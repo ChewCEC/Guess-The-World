@@ -27,8 +27,7 @@ body {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     width: auto;
     height: 80%;
-    /* display: grid;    */
-
+   
 }
 
 .game-title {
@@ -52,7 +51,10 @@ body {
     border-radius: 10px;
     height: 90px;
     width: auto;
-
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
@@ -101,7 +103,7 @@ body {
 
 }
 
-#box-container-button{
+.box-container-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,32 +131,30 @@ body {
 
 .word-box {
     background-color: transparent;
-    /* Borde redondeado */
     padding: 7px 16px;
-    /* Espaciado interno */
-    font-size: 15px;
-    /* Tamaño del texto */
+
     text-align: center;
-    /* Alineación del texto */
     display: inline-block;
-    /* Para permitir el padding y los márgenes */
     transition: background-color 0.3s ease;
-    /* Efecto de transición */
     margin: 8px;
-    /* Margen */
     cursor: pointer;
+    top: 50%;
+    font-size: 200%;
+    color: #F2F5F9;
+    font-weight: 500;
+
 }
 
 .char-box {
     width: 50px; /* Ajusta el tamaño según sea necesario */
     height: 50px; /* Ajusta el tamaño según sea necesario */
-    border: 2px solid #4A4E58; /* Borde más claro */
+    border: 3px solid #4A4E58; /* Borde más claro */
     border-radius: 10px; /* Ajusta el radio del borde según sea necesario */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px;
-    font-size: 15px;
+    font-size: 21px;
     color: white;
 
 }
@@ -176,7 +176,15 @@ body {
     border-radius: 5px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño de la fuente */
     cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0px 5px #672171
+
   }
 
 
+  #button-random, #button-reset {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    }
